@@ -158,8 +158,8 @@
 
 .profile-pic-navbar-dark,
 .profile-pic-navbar-light {
-  height: 10vh;
-  width: 10vh;
+  height: 8vh;
+  width: 8vh;
   border-radius: 50%;
   background-color: white;
 }
