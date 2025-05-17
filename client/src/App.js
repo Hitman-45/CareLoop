@@ -15,7 +15,8 @@ import ContactForm from "./pages/ContactForm/ContactForm";
 import UserProfile from "./pages/UserProfile/UserProfile";
 import UpdateProfile from "./pages/UserProfile/UpdateProfile";
 import Chatbot from "./pages/TherapyChatbot/Chatbot";
-import MiaLanding from "./pages/TherapyChatbot/MiaLanding/MiaLanding"
+import MiaLanding from "./pages/TherapyChatbot/MiaLanding/MiaLanding";
+import MenstrualPage from "./pages/Menstrual/menstrual";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -33,7 +34,7 @@ function App() {
         <NavbarMob mode={mode} />
       </MobileView>
 
-      {/* access app routes only if logged in */}
+      {/* Routes for unauthenticated users */}
       {!user && (
         <Routes>
           <Route
@@ -45,6 +46,8 @@ function App() {
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
       )}
+
+      {/* Routes for authenticated users */}
       {user && (
         <Routes>
           <Route exact path="home" element={<Home mode={mode} lang={lang} />} />
@@ -53,16 +56,14 @@ function App() {
             path="contact-us"
             element={<ContactForm mode={mode} lang={lang} />}
           />
+          <Route exact path="therapy-chatbot" element={<MiaLanding />} />
+          <Route exact path="therapy-chatbot-page" element={<Chatbot mode={mode} />} />
           <Route
             exact
-            path="therapy-chatbot"
-            element={<MiaLanding />}
+            path="menstrual"
+            element={<MenstrualPage mode={mode} user={user} />}
           />
-          <Route
-            exact
-            path="therapy-chatbot-page"
-            element={<Chatbot mode={mode} />}
-          />
+
           <Route
             exact
             path="story"
@@ -102,18 +103,6 @@ function App() {
           />
           <Route
             exact
-            path="story/modules/situation"
-            element={
-              <StorySituation
-                mode={mode}
-                lang={lang}
-                story={story}
-                setStory={setStory}
-              />
-            }
-          />
-          <Route
-            exact
             path="story/modules/situation/play"
             element={
               <StoryMode
@@ -130,7 +119,6 @@ function App() {
             exact
             path="profile"
             element={
-              // <Loading />
               <UserProfile
                 mode={mode}
                 setMode={setMode}

@@ -31,6 +31,11 @@ const Navbar = ({ user, mode }) => {
             </Link>
           </li>
           <li>
+            <Link to="/menstrual" className="mainLinks">
+              menstrual <FaHome />
+            </Link>
+          </li>
+          <li>
             <Link to="/therapy-chatbot" className="mainLinks">
               Mia <RiPsychotherapyLine />
             </Link>

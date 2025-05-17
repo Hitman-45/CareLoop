@@ -2,10 +2,9 @@ import React from "react";
 import "./NavbarMob.css";
 import { Link } from "react-router-dom";
 import { RiPsychotherapyLine } from "react-icons/ri";
-import { FaHome } from "react-icons/fa";
-import { FaUserAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaEnvelope } from "react-icons/fa";
 import { TbBulbFilled } from "react-icons/tb";
+import { GiFemale } from "react-icons/gi";  // Added icon for menstrual
 
 const NavbarMob = ({ mode }) => {
   const closeMenu = () => {
@@ -35,86 +34,60 @@ const NavbarMob = ({ mode }) => {
                 <Link
                   to="/home"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
                   Home
                 </Link>
-
-                {/* <a href="/home" className="navigation__link">
-                  {" "}
-                  Home
-                </a> */}
               </li>
               <li className="navigation__item">
                 <TbBulbFilled />
                 <Link
                   to="/story"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
                   Stories
                 </Link>
-                {/* <a
-                  href="/story"
+              </li>
+              <li className="navigation__item">
+                <GiFemale />
+                <Link
+                  to="/menstrual"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
-                  Stories
-                </a> */}
+                  Menstrual
+                </Link>
               </li>
               <li className="navigation__item">
                 <RiPsychotherapyLine />
                 <Link
                   to="/therapy-chatbot"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
                   Mia
                 </Link>
-                {/* <a href="/therapy-chatbot" className="navigation__link">
-                  {" "}
-                  Mia
-                </a> */}
               </li>
               <li className="navigation__item">
                 <FaEnvelope />
                 <Link
                   to="/contact-us"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
                   Contact Us
                 </Link>
-                {/* <a href="/contact-us" className="navigation__link">
-                  {" "}
-                  Contact Us
-                </a> */}
               </li>
               <li className="navigation__item">
                 <FaUserAlt />
                 <Link
                   to="/profile"
                   className="navigation__link"
-                  onClick={() => {
-                    closeMenu();
-                  }}
+                  onClick={closeMenu}
                 >
                   Profile
                 </Link>
-                {/* <a href="/profile" className="navigation__link">
-                  {" "}
-                  Profile
-                </a> */}
               </li>
             </ul>
           </nav>
