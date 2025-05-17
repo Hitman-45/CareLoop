@@ -14,8 +14,8 @@ function Events({ lang }) {
   const [StoryDesc, setStoryDesc] = useState(
     "Learn how to talk sensitively to people suffering with different issues through curated conversations!"
   );
-  const [MiaText, setMiaText] = useState("Mia");
-  const [MiaDesc, setMiaDesc] = useState("Converse with your AI therapist!");
+  const [MiaText, setMiaText] = useState("Menstrual");
+  const [MiaDesc, setMiaDesc] = useState("Track your next period with accuracy using our menstrual feature. Get personalized insights and support through our AI-powered period chatbox!");
   const [NewsText, setNewsText] = useState("News");
   const [NewsDesc, setNewsDesc] = useState("Get the latest updates on mental health!");
   const [isLoading, setIsLoading] = useState(true);
@@ -108,9 +108,9 @@ function Events({ lang }) {
                   </Link>
                 </div>
 
-                {/* Mia */}
+                {/* Menstrual */}
                 <div className="timeline">
-                  <Link to="/therapy-chatbot" className="timeline-content" style={{ textDecoration: "none" }}>
+                  <Link to="/menstrual" className="timeline-content" style={{ textDecoration: "none" }}>
                     <div className="timeline-icon">
                       <i className="fa fa-users" aria-hidden="true"></i>
                     </div>

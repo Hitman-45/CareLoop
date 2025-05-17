@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import drop_img from "./drop.png";
 import { Link } from "react-router-dom";
 import { RiPsychotherapyLine } from "react-icons/ri";
 import { FaHome } from "react-icons/fa";
@@ -32,7 +33,8 @@ const Navbar = ({ user, mode }) => {
           </li>
           <li>
             <Link to="/menstrual" className="mainLinks">
-              menstrual <FaHome />
+              menstrual 
+               <img src={drop_img} alt="Menstrual Icon" style={{ width: '25px', height: '25px' }} />
             </Link>
           </li>
           <li>
