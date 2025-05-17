@@ -189,12 +189,16 @@ const UserProfile = ({ mode, setMode, user, setUser, lang }) => {
                                 >
                                     {editText}
                                 </div>
+                                <div className="mode-toggle-wrapper">
+                                <span className="mode-label">Light</span>
                                 <ModeToggle
                                     mode={mode}
                                     setMode={setMode}
                                     user={user}
                                     setUser={setUser}
                                 />
+                                <span className="mode-label">Dark</span>
+                                </div>
                                 <div
                                     className={`logout-button-profile-${mode}`}
                                     onClick={logout}

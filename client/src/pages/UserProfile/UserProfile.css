@@ -151,6 +151,20 @@
     }
 }
 
+
+.mode-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.mode-label {
+    font-size: 12px;
+    color: #777;
+}
+
+
 .badges-heading{
     padding-left: 3vw;
     padding-top: 2vh;
