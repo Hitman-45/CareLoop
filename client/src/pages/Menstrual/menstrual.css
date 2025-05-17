@@ -1,5 +1,5 @@
 .menstrual-container {
-  max-width: 400px;
+  max-width: 500px;
   margin: 3rem auto;
   padding: 2rem;
   background: #fff0f6;
@@ -81,4 +81,30 @@
   .menstrual-calendar-section input[type="date"] {
     max-width: 100%;
   }
+}
+.chatbot-section input[type="text"] {
+  border: 2px solid #ff4d6d;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+}
+
+.chatbot-section input[type="text"]:focus {
+  border-color: #ff1a44;
+  box-shadow: 0 0 8px #ff1a44;
+}
+
+.chatbot-section button {
+  background-color: #ff4d6d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chatbot-section button:disabled {
+  background-color: #ffa6b4;
+  cursor: not-allowed;
 }
