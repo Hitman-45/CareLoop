@@ -1,5 +1,4 @@
-/* Base container */
-.container {
+.menstrual-container {
   max-width: 400px;
   margin: 3rem auto;
   padding: 2rem;
@@ -11,31 +10,27 @@
   text-align: center;
 }
 
-/* Heading with emoji */
-.heading {
+.menstrual-heading {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
-/* Section holding form elements */
-.calendar-section {
+.menstrual-calendar-section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
 
-/* Label styling */
-.calendar-section label {
+.menstrual-calendar-section label {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
   align-self: flex-start;
 }
 
-/* Date input styling */
-input[type="date"] {
+.menstrual-calendar-section input[type="date"] {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   border: 2px solid #ff4d6d;
@@ -47,14 +42,13 @@ input[type="date"] {
   cursor: pointer;
 }
 
-input[type="date"]:focus {
+.menstrual-calendar-section input[type="date"]:focus {
   outline: none;
   border-color: #ff1a44;
   box-shadow: 0 0 8px #ff1a44;
 }
 
-/* Estimated date paragraph */
-.calendar-section p {
+.menstrual-calendar-section p {
   margin-top: 1rem;
   font-size: 1.2rem;
   background: #ffe6eb;
@@ -67,7 +61,6 @@ input[type="date"]:focus {
   user-select: none;
 }
 
-/* Pulse animation to highlight next period date */
 @keyframes pulse {
   0%, 100% {
     box-shadow: 0 0 8px #ff4d6d;
@@ -77,16 +70,15 @@ input[type="date"]:focus {
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 480px) {
-  .container {
+  .menstrual-container {
     margin: 2rem 1rem;
     padding: 1.5rem;
   }
-  .heading {
+  .menstrual-heading {
     font-size: 1.5rem;
   }
-  input[type="date"] {
+  .menstrual-calendar-section input[type="date"] {
     max-width: 100%;
   }
 }

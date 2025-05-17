@@ -19,9 +19,9 @@ function Menstrual() {
   };
 
   return (
-    <div className="container">
-      <h2 className="cycle heading">🩸 Cycle Calendar</h2>
-      <div className="calendar-section">
+    <div className="menstrual-container">
+      <h2 className="menstrual-heading">🩸 Cycle Calendar</h2>
+      <div className="menstrual-calendar-section">
         <label htmlFor="period-date">Enter Last Period Date:</label>
         <input
           id="period-date"
