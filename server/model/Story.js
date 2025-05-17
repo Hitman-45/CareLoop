@@ -9,7 +9,7 @@ const dialogueOptionSchema = new Schema({
         type: String,
         required: true
     },
-    sankalpExplanation: {
+    careLoopExplanation: {
         type: String,
         required: true
     },

@@ -21,9 +21,9 @@ const Navbar = ({ user, mode }) => {
           <ul className="nav-links">
             <li>
               <img
-                className={`sankalp-logo`}
+                className={`careloop-logo`}
                 src={"./images/sankalpLogo.png"}
-                alt="Sankalp Logo"
+                alt="CareLoop Logo"
               />
             </li>
             <li>

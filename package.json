@@ -1,5 +1,5 @@
 {
-  "name": "sankalp",
+  "name": "careloop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChandradithyaJ/Sankalp.git"
+    "url": "git+https://github.com/Hitman-45/CareLoop.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChandradithyaJ/Sankalp/issues"
+    "url": "https://github.com/Hitman-45/CareLoop/issues"
   },
-  "homepage": "https://github.com/ChandradithyaJ/Sankalp#readme",
+  "homepage": "https://github.com/Hitman-45/CareLoop#readme",
   "dependencies": {
     "concurrently": "^8.2.1",
     "jquery": "^3.7.1",

@@ -16,11 +16,11 @@ function Home({ mode, lang }) {
 
   const [welcome, setWelcome] = useState("Welcome to CareLoop!");
   const [entryQuote, setEntryQuote] = useState(
-    "Empathy is the greatest virtue. From it, all virtues flow. Without it, all virtues are an act."
+    "When you show deep empathy toward others, their defensive energy goes down, and positive energy replaces it. That’s when you can get more creative in solving problems."
   );
-  const [philosopher, setPhilosopher] = useState("Eric Zorn");
+  const [philosopher, setPhilosopher] = useState("Stephen Covey");
   const [newsTitle, setNewsTitle] = useState("News");
-  const [exploreTitle, setExploreTitle] = useState("Let's Explore Sankalp");
+  const [exploreTitle, setExploreTitle] = useState("Let's Explore careLoop");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

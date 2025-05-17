@@ -3,7 +3,7 @@ const { cloudinary } = require('../config/cloudinaryConfig')
 // get all the pics cloudinary has
 const getAllPics = async (req, res) => {
     try{
-        const { resources } = await cloudinary.search.expression('folder:SankalpProfilePics').sort_by('public_id', 'desc').max_results(30).execute()
+        const { resources } = await cloudinary.search.expression('folder:ProfilePics').sort_by('public_id', 'desc').max_results(30).execute()
 
         const publicIDs = resources.map(file => file.public_id)
         res.status(200).json(publicIDs)

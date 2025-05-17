@@ -42,7 +42,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
     const [goBackToStoryText, setGoBackToStoryText] = useState('Back to Story ')
     const [EndStoryText, setEndStoryText] = useState('End Story')
     const [dialogueSet, setDialogueSet] = useState(story.dialogues[0])
-    const [translatedSankalpExplanation, setTranslatedSankalpExplanation] = useState('')
+    const [translatedcareLoopExplanation, setTranslatedcareLoopExplanation] = useState('')
     const [selectedOptionText, setSelectedOptionText] = useState('')
 
     // one-time translation
@@ -126,16 +126,16 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         }
         else if (option !== selectedOption) {
             setSelectedOption(option)
-            setTranslatedSankalpExplanation(translatedOption.sankalpExplanation)
+            setTranslatedcareLoopExplanation(translatedOption.careLoopExplanation)
             setSelectedOptionText(translatedOption.dialogueOption)
         } else {
             setSelectedOption('')
             setSelectedOptionText('')
-            setTranslatedSankalpExplanation('')
+            setTranslatedcareLoopExplanation('')
         }
     }
 
-    // go to Dr Sankalp to evaluate the response
+    // go to Dr careLoop to evaluate the response
     const evaluateResponse = (d) => {
         if (selectedOption !== null) {
             setEvaluate(true)
@@ -153,7 +153,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         setEvaluate(false)
         setSelectedOption(null)
         setSelectedOptionText('')
-        setTranslatedSankalpExplanation('')
+        setTranslatedcareLoopExplanation('')
     }
 
     const continueConversing = () => {
@@ -164,7 +164,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         setEvaluate(false)
         setSelectedOption(null)
         setSelectedOptionText('')
-        setTranslatedSankalpExplanation('')
+        setTranslatedcareLoopExplanation('')
     }
 
     const endConversation = async () => {
@@ -350,10 +350,10 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
                         evaluate &&
                         <div className='evaluation-container'>
                             <SpeechBubble
-                                text={translatedSankalpExplanation}
+                                text={translatedcareLoopExplanation}
                                 mode={mode}
                             />
-                            <div className='sankalp-lottie'>
+                            <div className='careLoop-lottie'>
                                 <Lottie
                                     animationData={doctor}
                                     loop={true}
