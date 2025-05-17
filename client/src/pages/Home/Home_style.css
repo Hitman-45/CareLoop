@@ -183,7 +183,7 @@ nav img {
 }
 
 .hero_bottom {
-  background-image: url("https://www.masala.com/cloud/2021/08/01/5iOQZ3fR-balance-blur-calm-312839.jpg-1200x800.jpg");
+  background-image: url("../../../public/images/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 90vh;

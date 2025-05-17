@@ -1,61 +1,75 @@
-/*for Navbar*/
-.large-screen {
+/* Container */
+.navbar-wrapper {
   display: flex;
 }
 
+/* Navbar layout */
 nav {
   height: 6rem;
   width: 100vw;
-  background-color: #131418;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff0f5; /* soft pink */
+  box-shadow: 0 3px 20px rgba(255, 182, 193, 0.3); /* light pink shadow */
   display: flex;
   z-index: 10;
 }
 
+/* Nav links layout */
 .nav-links {
   display: flex;
   width: 100%;
   margin: 0;
   list-style: none;
-  padding: 0 0.7vw;
+  padding: 0 1vw;
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
 }
+
+/* Nav links styling */
 .nav-links li a {
   text-decoration: none;
   margin: 0 0.7vw;
   font-size: larger;
-  color: mediumseagreen;
+  color: #d63384; /* vibrant pink */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
 }
+
 .nav-links li .mainLinks:hover {
-  color: #61dafb;
+  color: #ba55d3; /* orchid */
 }
+
+/* Hover underline effect */
 .nav-links li {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
+
 .nav-links li .mainLinks::before {
   content: "";
   display: block;
   height: 2px;
   width: 0%;
-  background-color: #61dafb;
+  background-color: #ff69b4;
   position: absolute;
-  transition: all ease-in-out 250ms;
-  margin: 0 0 0 10%;
+  bottom: -5px;
+  transition: width 0.3s ease-in-out;
 }
-.nav-links li a:hover::before {
+
+.nav-links li .mainLinks:hover::before {
   width: 60%;
 }
 
+/* Hamburger icon */
 .hamburger div {
   width: 30px;
   height: 3px;
-  background: #f2f5f7;
+  background: #d63384;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -63,51 +77,50 @@ nav {
   display: none;
 }
 
+/* Profile and logo */
+.profile-pic-navbar-dark,
+.profile-pic-navbar-light,
+.sankalp-logo {
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #ff69b4;
+  object-fit: cover;
+}
+
+/* Icons */
+.nav-links li svg {
+  height: 20px;
+  width: 20px;
+  color: #8e44ad;
+}
+
+/* Responsive tweaks */
 @media screen and (max-width: 800px) {
   .nav-links {
+    flex-wrap: wrap;
     margin: 2vw 1vw;
   }
 
   .nav-links li {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-left: 2vw;
   }
+
   .nav-links li a {
     font-size: 1.6vh;
-    flex-wrap: wrap;
   }
 }
 
+/* Hamburger animation (if used) */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
-  transition: all 0.7s ease;
   width: 0;
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.profile-pic-navbar-dark,
-.profile-pic-navbar-light {
-  height: 10vh;
-  width: 10vh;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.careloop-logo {
-  height: 10vh;
-  width: 10vh;
-  border-radius: 40%;
-  background-color: white;
-}
-
-.nav-links li svg {
-  height: 20px;
-  width: 50px;
-  color: burlywood;
 }
