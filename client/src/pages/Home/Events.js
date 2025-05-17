@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // 🔹 import Link for navigation
 import "./Events.css";
 import serverAPI from "../../api/serverAPI";
 import Loading from "../../components/Loading/Loading";
@@ -16,38 +17,34 @@ function Events({ lang }) {
   const [MiaText, setMiaText] = useState("Mia");
   const [MiaDesc, setMiaDesc] = useState("Converse with your AI therapist!");
   const [NewsText, setNewsText] = useState("News");
-  const [NewsDesc, setNewsDesc] = useState("Get the latest updates on mental health!")
-  const [isLoading, setIsLoading] = useState(true)
+  const [NewsDesc, setNewsDesc] = useState("Get the latest updates on mental health!");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const translate = async () => {
-      // store the originals to send as the body of the request
       const translationDetails = {
         to: lang,
-        StoryModeText: StoryModeText,
-        StoryDesc: StoryDesc,
-        MiaText: MiaText,
-        MiaDesc: MiaDesc,
-        NewsText: NewsText,
-        NewsDesc: NewsDesc
+        StoryModeText,
+        StoryDesc,
+        MiaText,
+        MiaDesc,
+        NewsText,
+        NewsDesc,
       };
 
       if (lang !== "en") {
         try {
-          const response = await serverAPI.post(
-            "/translate",
-            translationDetails
-          );
+          const response = await serverAPI.post("/translate", translationDetails);
           if (response && response.data) {
             setStoryModeText(response.data.StoryModeText);
             setStoryDesc(response.data.StoryDesc);
             setMiaText(response.data.MiaText);
             setMiaDesc(response.data.MiaDesc);
             setNewsText(response.data.NewsText);
-            setNewsDesc(response.data.NewsDesc)
+            setNewsDesc(response.data.NewsDesc);
           }
         } catch (err) {
-          setIsLoading(false)
+          setIsLoading(false);
           toast.error(`Unable to load the app. Please check your internet connection and try again.`, {
             position: "top-right",
             autoClose: 5000,
@@ -65,15 +62,13 @@ function Events({ lang }) {
     };
 
     translate();
-  }, []);
+  }, [lang]);
 
   return (
     <>
-      {
-        isLoading && <Loading />
-      }
-      {
-        !isLoading &&
+      {isLoading && <Loading />}
+
+      {!isLoading && (
         <div className="container">
           <ToastContainer
             position="top-right"
@@ -90,21 +85,17 @@ function Events({ lang }) {
           <div className="row">
             <div className="col">
               <div className="main-timeline">
+
+                {/* Story Mode */}
                 <div className="timeline">
-                  <a
-                    href="/"
-                    className="timeline-content"
-                    style={{ pointerEvents: "none", textDecoration: "none" }}
-                  >
+                  <Link to="/story" className="timeline-content" style={{ textDecoration: "none" }}>
                     <div className="timeline-icon">
                       <i className="fa fa-rocket" aria-hidden="true"></i>
                     </div>
                     <div className="ImageContainer">
                       <div className="content">
                         <h3 className="title">{StoryModeText}</h3>
-                        <p className="description">
-                          {StoryDesc}
-                        </p>
+                        <p className="description">{StoryDesc}</p>
                       </div>
                       <div className="ImageDiv">
                         <img
@@ -114,14 +105,12 @@ function Events({ lang }) {
                         />
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
+                {/* Mia */}
                 <div className="timeline">
-                  <a
-                    href="/"
-                    className="timeline-content"
-                    style={{ pointerEvents: "none", textDecoration: "none" }}
-                  >
+                  <Link to="/therapy-chatbot" className="timeline-content" style={{ textDecoration: "none" }}>
                     <div className="timeline-icon">
                       <i className="fa fa-users" aria-hidden="true"></i>
                     </div>
@@ -135,28 +124,22 @@ function Events({ lang }) {
                       </div>
                       <div className="content">
                         <h3 className="title">{MiaText}</h3>
-                        <p className="description">
-                          {MiaDesc}
-                        </p>
+                        <p className="description">{MiaDesc}</p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
+                {/* News */}
                 <div className="timeline">
-                  <a
-                    href="/"
-                    className="timeline-content"
-                    style={{ pointerEvents: "none", textDecoration: "none" }}
-                  >
+                  <Link to="/news" className="timeline-content" style={{ textDecoration: "none" }}>
                     <div className="timeline-icon">
                       <i className="fa fa-cog" aria-hidden="true"></i>
                     </div>
                     <div className="ImageContainer">
                       <div className="content">
                         <h3 className="title">{NewsText}</h3>
-                        <p className="description">
-                          {NewsDesc}
-                        </p>
+                        <p className="description">{NewsDesc}</p>
                       </div>
                       <div className="ImageDiv">
                         <img
@@ -166,13 +149,14 @@ function Events({ lang }) {
                         />
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-      }
+      )}
     </>
   );
 }
