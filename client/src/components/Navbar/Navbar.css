@@ -5,7 +5,7 @@
 
 /* Navbar layout */
 nav {
-  height: 6rem;
+  height: 5rem;
   width: 100vw;
   background-color: #fff0f5; /* soft pink */
   box-shadow: 0 3px 20px rgba(255, 182, 193, 0.3); /* light pink shadow */
@@ -81,19 +81,20 @@ nav {
 .profile-pic-navbar-dark,
 .profile-pic-navbar-light,
 .sankalp-logo {
-  height: 9vh;
-  width: 9vh;
+  height: 8vh;
+  width: 8vh;
   border-radius: 50%;
   background-color: white;
   border: 2px solid #ff69b4;
   object-fit: cover;
 }
 
+
 /* Icons */
 .nav-links li svg {
   height: 20px;
   width: 20px;
-  color: #8e44ad;
+  color: #ff69b4;
 }
 
 /* Responsive tweaks */
