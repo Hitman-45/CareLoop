@@ -37,10 +37,10 @@ const updateProfilePic = async (req, res) => {
     if(!publicID) return res.status(400).json('Public ID not provided')
 
     try{
-        const uploadedResponse = await cloudinary.uploader.upload(profilePic, {
-            upload_preset: 'SankalpProfilePics', // folder in cloudinary
+        cloudinary.uploader.upload(profilePic, {
+            folder: 'ProfilePics',
             public_id: publicID
-        })
+        })        
         res.status(200).json(uploadedResponse.url)
     } catch (err) {
         console.log(err)
