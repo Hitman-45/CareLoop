@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { GoogleGenAI } from "@google/genai";
 import "./menstrual.css";
 
-const GEMINI_API_KEY = "AIzaSyCvM8cq-UdjuEJtCn5XqfVDsX6ByEUPu48"; // Replace with your actual API key
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // Replace with your actual API key
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
 function Menstrual() {

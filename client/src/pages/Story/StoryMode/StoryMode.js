@@ -42,7 +42,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
     const [goBackToStoryText, setGoBackToStoryText] = useState('Back to Story ')
     const [EndStoryText, setEndStoryText] = useState('End Story')
     const [dialogueSet, setDialogueSet] = useState(story.dialogues[0])
-    const [translatedcareLoopExplanation, setTranslatedcareLoopExplanation] = useState('')
+    const [translatedsankalpExplanation, setTranslatedsankalpExplanation] = useState('')
     const [selectedOptionText, setSelectedOptionText] = useState('')
 
     // one-time translation
@@ -126,12 +126,12 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         }
         else if (option !== selectedOption) {
             setSelectedOption(option)
-            setTranslatedcareLoopExplanation(translatedOption.careLoopExplanation)
+            setTranslatedsankalpExplanation(translatedOption.sankalpExplanation)
             setSelectedOptionText(translatedOption.dialogueOption)
         } else {
             setSelectedOption('')
             setSelectedOptionText('')
-            setTranslatedcareLoopExplanation('')
+            setTranslatedsankalpExplanation('')
         }
     }
 
@@ -153,7 +153,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         setEvaluate(false)
         setSelectedOption(null)
         setSelectedOptionText('')
-        setTranslatedcareLoopExplanation('')
+        setTranslatedsankalpExplanation('')
     }
 
     const continueConversing = () => {
@@ -164,7 +164,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
         setEvaluate(false)
         setSelectedOption(null)
         setSelectedOptionText('')
-        setTranslatedcareLoopExplanation('')
+        setTranslatedsankalpExplanation('')
     }
 
     const endConversation = async () => {
@@ -350,7 +350,7 @@ const StoryMode = ({ mode, lang, user, setUser, story, setStory }) => {
                         evaluate &&
                         <div className='evaluation-container'>
                             <SpeechBubble
-                                text={translatedcareLoopExplanation}
+                                text={translatedsankalpExplanation}
                                 mode={mode}
                             />
                             <div className='careLoop-lottie'>

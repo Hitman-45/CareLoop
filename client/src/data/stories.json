@@ -9,12 +9,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Do you want to talk about it?",
-              "careLoopExplanation": "Showing empathy helps them feel heard.",
+              "sankalpExplanation": "Showing empathy helps them feel heard.",
               "score": 10
             },
             {
               "dialogueOption": "You'll get over it.",
-              "careLoopExplanation": "This dismisses their feelings.",
+              "sankalpExplanation": "This dismisses their feelings.",
               "score": 5
             }
           ]
@@ -24,12 +24,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Want to go for a walk after class?",
-              "careLoopExplanation": "Spending time together provides support.",
+              "sankalpExplanation": "Spending time together provides support.",
               "score": 10
             },
             {
               "dialogueOption": "At least you're not failing like me.",
-              "careLoopExplanation": "This shifts focus away from them.",
+              "sankalpExplanation": "This shifts focus away from them.",
               "score": 5
             }
           ]
@@ -39,12 +39,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "I'm here for you. Do you want to share what's been hardest?",
-              "careLoopExplanation": "Creates a safe space for expression.",
+              "sankalpExplanation": "Creates a safe space for expression.",
               "score": 10
             },
             {
               "dialogueOption": "That’s life. We all go through stuff.",
-              "careLoopExplanation": "Minimizes their individual struggle.",
+              "sankalpExplanation": "Minimizes their individual struggle.",
               "score": 5
             }
           ]
@@ -54,12 +54,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "I’m sorry you feel that way. I’m glad you told me.",
-              "careLoopExplanation": "Affirms their emotions and courage to speak.",
+              "sankalpExplanation": "Affirms their emotions and courage to speak.",
               "score": 10
             },
             {
               "dialogueOption": "That’s not true, people care—you’re overthinking.",
-              "careLoopExplanation": "Invalidates their perspective.",
+              "sankalpExplanation": "Invalidates their perspective.",
               "score": 5
             }
           ]
@@ -69,12 +69,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Thank you. I'm always here if you need to talk.",
-              "careLoopExplanation": "Reinforces support and availability.",
+              "sankalpExplanation": "Reinforces support and availability.",
               "score": 10
             },
             {
               "dialogueOption": "Cool. Anyway, did you do the homework?",
-              "careLoopExplanation": "Suddenly shifting topics can seem insensitive.",
+              "sankalpExplanation": "Suddenly shifting topics can seem insensitive.",
               "score": 5
             }
           ]
@@ -84,12 +84,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Would you like me to join you for lunch tomorrow?",
-              "careLoopExplanation": "Encourages healthy behavior with company.",
+              "sankalpExplanation": "Encourages healthy behavior with company.",
               "score": 10
             },
             {
               "dialogueOption": "Skipping a few meals isn't a big deal.",
-              "careLoopExplanation": "Can normalize unhealthy coping mechanisms.",
+              "sankalpExplanation": "Can normalize unhealthy coping mechanisms.",
               "score": 5
             }
           ]
@@ -99,12 +99,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Have you tried journaling or talking to a counselor?",
-              "careLoopExplanation": "Gently introduces helpful coping strategies.",
+              "sankalpExplanation": "Gently introduces helpful coping strategies.",
               "score": 10
             },
             {
               "dialogueOption": "Just tire yourself out during the day.",
-              "careLoopExplanation": "Not a meaningful solution to sleep issues.",
+              "sankalpExplanation": "Not a meaningful solution to sleep issues.",
               "score": 5
             }
           ]
@@ -114,12 +114,12 @@
           "dialogueOptions": [
             {
               "dialogueOption": "Absolutely, it could really help you feel better.",
-              "careLoopExplanation": "Encourages reaching out for professional help.",
+              "sankalpExplanation": "Encourages reaching out for professional help.",
               "score": 10
             },
             {
               "dialogueOption": "You’re not that bad. Therapy is for serious problems.",
-              "careLoopExplanation": "Stigmatizes mental health support.",
+              "sankalpExplanation": "Stigmatizes mental health support.",
               "score": 5
             }
           ]
@@ -137,12 +137,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I understand. I'm here if you need someone.",
-                "careLoopExplanation": "Acknowledging their need for space while offering support shows empathy.",
+                "sankalpExplanation": "Acknowledging their need for space while offering support shows empathy.",
                 "score": 10
               },
               {
                 "dialogueOption": "You’re just overthinking things.",
-                "careLoopExplanation": "This dismisses their emotional struggle.",
+                "sankalpExplanation": "This dismisses their emotional struggle.",
                 "score": 5
               }
             ]
@@ -152,12 +152,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That sounds really hard. Want to talk about what's been going on?",
-                "careLoopExplanation": "Inviting them to share fosters trust and connection.",
+                "sankalpExplanation": "Inviting them to share fosters trust and connection.",
                 "score": 10
               },
               {
                 "dialogueOption": "Try thinking positive, it’ll go away.",
-                "careLoopExplanation": "Toxic positivity can invalidate real emotions.",
+                "sankalpExplanation": "Toxic positivity can invalidate real emotions.",
                 "score": 5
               }
             ]
@@ -167,12 +167,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "You're not alone. I'm with you and care about you.",
-                "careLoopExplanation": "Assuring presence can be a great comfort.",
+                "sankalpExplanation": "Assuring presence can be a great comfort.",
                 "score": 10
               },
               {
                 "dialogueOption": "Maybe you're being too sensitive.",
-                "careLoopExplanation": "This may make them feel judged or misunderstood.",
+                "sankalpExplanation": "This may make them feel judged or misunderstood.",
                 "score": 5
               }
             ]
@@ -182,12 +182,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That sounds exhausting. Have you thought about talking to a professional?",
-                "careLoopExplanation": "Gently suggesting help shows concern.",
+                "sankalpExplanation": "Gently suggesting help shows concern.",
                 "score": 10
               },
               {
                 "dialogueOption": "Maybe you just need more sleep.",
-                "careLoopExplanation": "Oversimplifying the issue misses the emotional depth.",
+                "sankalpExplanation": "Oversimplifying the issue misses the emotional depth.",
                 "score": 5
               }
             ]
@@ -197,12 +197,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That worries me. Would it help if I checked in regularly?",
-                "careLoopExplanation": "Consistent support can make someone feel valued.",
+                "sankalpExplanation": "Consistent support can make someone feel valued.",
                 "score": 10
               },
               {
                 "dialogueOption": "You'll be fine. Just eat and sleep properly.",
-                "careLoopExplanation": "Minimizes the seriousness of mental health decline.",
+                "sankalpExplanation": "Minimizes the seriousness of mental health decline.",
                 "score": 5
               }
             ]
@@ -212,12 +212,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "You’re not a burden. Your feelings matter, and I’m here.",
-                "careLoopExplanation": "Directly affirming worth helps counter self-blame.",
+                "sankalpExplanation": "Directly affirming worth helps counter self-blame.",
                 "score": 10
               },
               {
                 "dialogueOption": "Everyone has problems. Deal with it.",
-                "careLoopExplanation": "Lacks compassion and isolates the person further.",
+                "sankalpExplanation": "Lacks compassion and isolates the person further.",
                 "score": 5
               }
             ]
@@ -227,12 +227,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I'm really glad you're still trying. That shows strength.",
-                "careLoopExplanation": "Recognizing their effort validates their struggle.",
+                "sankalpExplanation": "Recognizing their effort validates their struggle.",
                 "score": 10
               },
               {
                 "dialogueOption": "You’re being dramatic.",
-                "careLoopExplanation": "Invalidates genuine emotional pain.",
+                "sankalpExplanation": "Invalidates genuine emotional pain.",
                 "score": 5
               }
             ]
@@ -242,12 +242,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "Of course I care. You matter to me.",
-                "careLoopExplanation": "Affirmation and reassurance build trust and hope.",
+                "sankalpExplanation": "Affirmation and reassurance build trust and hope.",
                 "score": 10
               },
               {
                 "dialogueOption": "Well, I guess it’s good you said something.",
-                "careLoopExplanation": "Lacks warmth and may feel obligatory.",
+                "sankalpExplanation": "Lacks warmth and may feel obligatory.",
                 "score": 5
               }
             ]
@@ -265,12 +265,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That sounds frustrating. Is there a way I can help you stay on track?",
-                "careLoopExplanation": "Offering help with empathy shows understanding of their challenge.",
+                "sankalpExplanation": "Offering help with empathy shows understanding of their challenge.",
                 "score": 10
               },
               {
                 "dialogueOption": "Just try harder to concentrate.",
-                "careLoopExplanation": "Misunderstands the involuntary nature of ADHD symptoms.",
+                "sankalpExplanation": "Misunderstands the involuntary nature of ADHD symptoms.",
                 "score": 5
               }
             ]
@@ -280,12 +280,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "It happens. Maybe we can set a reminder together?",
-                "careLoopExplanation": "Shows support without blame and encourages problem-solving.",
+                "sankalpExplanation": "Shows support without blame and encourages problem-solving.",
                 "score": 10
               },
               {
                 "dialogueOption": "You’re just being careless.",
-                "careLoopExplanation": "Assumes laziness instead of recognizing executive function issues.",
+                "sankalpExplanation": "Assumes laziness instead of recognizing executive function issues.",
                 "score": 5
               }
             ]
@@ -295,12 +295,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I know you don’t mean to. It’s okay, I’m here for you.",
-                "careLoopExplanation": "Recognizing impulsivity as part of ADHD builds trust.",
+                "sankalpExplanation": "Recognizing impulsivity as part of ADHD builds trust.",
                 "score": 10
               },
               {
                 "dialogueOption": "You should think before you speak.",
-                "careLoopExplanation": "Ignores how impulse control works in ADHD.",
+                "sankalpExplanation": "Ignores how impulse control works in ADHD.",
                 "score": 5
               }
             ]
@@ -310,12 +310,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I know that’s not true. I see how hard you’re trying.",
-                "careLoopExplanation": "Validation is powerful for people constantly misunderstood.",
+                "sankalpExplanation": "Validation is powerful for people constantly misunderstood.",
                 "score": 10
               },
               {
                 "dialogueOption": "Maybe try being more organized.",
-                "careLoopExplanation": "Minimizes the internal effort already being made.",
+                "sankalpExplanation": "Minimizes the internal effort already being made.",
                 "score": 5
               }
             ]
@@ -325,12 +325,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That’s valid. Want to take breaks or change it up together?",
-                "careLoopExplanation": "Being flexible helps someone with ADHD stay engaged.",
+                "sankalpExplanation": "Being flexible helps someone with ADHD stay engaged.",
                 "score": 10
               },
               {
                 "dialogueOption": "That’s just an excuse to not finish stuff.",
-                "careLoopExplanation": "Judges the behavior instead of understanding the condition.",
+                "sankalpExplanation": "Judges the behavior instead of understanding the condition.",
                 "score": 5
               }
             ]
@@ -340,12 +340,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "We all work differently. Let’s find a way that works for you too.",
-                "careLoopExplanation": "Supports inclusion and values their input.",
+                "sankalpExplanation": "Supports inclusion and values their input.",
                 "score": 10
               },
               {
                 "dialogueOption": "Then maybe you shouldn’t do group work.",
-                "careLoopExplanation": "Excludes and discourages participation.",
+                "sankalpExplanation": "Excludes and discourages participation.",
                 "score": 5
               }
             ]
@@ -355,12 +355,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That’s okay. Want me to share notes or help you catch up?",
-                "careLoopExplanation": "Supportive actions help reduce anxiety around symptoms.",
+                "sankalpExplanation": "Supportive actions help reduce anxiety around symptoms.",
                 "score": 10
               },
               {
                 "dialogueOption": "Then pay attention. It’s not that hard.",
-                "careLoopExplanation": "Dismissive of how ADHD affects attention span.",
+                "sankalpExplanation": "Dismissive of how ADHD affects attention span.",
                 "score": 5
               }
             ]
@@ -370,12 +370,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "Of course. I’m learning too and want to be a better friend.",
-                "careLoopExplanation": "Demonstrates humility and compassion.",
+                "sankalpExplanation": "Demonstrates humility and compassion.",
                 "score": 10
               },
               {
                 "dialogueOption": "Well, I guess you’re trying your best.",
-                "careLoopExplanation": "Sounds condescending or detached, even if well-intentioned.",
+                "sankalpExplanation": "Sounds condescending or detached, even if well-intentioned.",
                 "score": 5
               }
             ]
@@ -393,12 +393,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That must be terrifying. I’m here if you need to talk.",
-                "careLoopExplanation": "Acknowledges the severity and offers a safe space.",
+                "sankalpExplanation": "Acknowledges the severity and offers a safe space.",
                 "score": 10
               },
               {
                 "dialogueOption": "Just try to distract yourself.",
-                "careLoopExplanation": "Minimizes their emotional experience.",
+                "sankalpExplanation": "Minimizes their emotional experience.",
                 "score": 5
               }
             ]
@@ -408,12 +408,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "Would you like to move somewhere quieter?",
-                "careLoopExplanation": "Helps reduce triggers with empathy.",
+                "sankalpExplanation": "Helps reduce triggers with empathy.",
                 "score": 10
               },
               {
                 "dialogueOption": "You need to toughen up.",
-                "careLoopExplanation": "Dismisses their trauma response.",
+                "sankalpExplanation": "Dismisses their trauma response.",
                 "score": 5
               }
             ]
@@ -423,12 +423,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That's completely valid. We can hang out elsewhere.",
-                "careLoopExplanation": "Respecting boundaries helps them feel safe.",
+                "sankalpExplanation": "Respecting boundaries helps them feel safe.",
                 "score": 10
               },
               {
                 "dialogueOption": "You’ll never heal if you keep avoiding things.",
-                "careLoopExplanation": "Forces progress and ignores their pacing.",
+                "sankalpExplanation": "Forces progress and ignores their pacing.",
                 "score": 5
               }
             ]
@@ -438,12 +438,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I may not fully get it, but I want to understand.",
-                "careLoopExplanation": "Shows willingness to learn and be supportive.",
+                "sankalpExplanation": "Shows willingness to learn and be supportive.",
                 "score": 10
               },
               {
                 "dialogueOption": "You’re probably overthinking it.",
-                "careLoopExplanation": "Invalidates their emotional state.",
+                "sankalpExplanation": "Invalidates their emotional state.",
                 "score": 5
               }
             ]
@@ -453,12 +453,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "You’re not broken. You’re strong for surviving.",
-                "careLoopExplanation": "Reframes their struggle with strength.",
+                "sankalpExplanation": "Reframes their struggle with strength.",
                 "score": 10
               },
               {
                 "dialogueOption": "Everyone goes through stuff, just deal with it.",
-                "careLoopExplanation": "Lacks compassion and context for trauma.",
+                "sankalpExplanation": "Lacks compassion and context for trauma.",
                 "score": 5
               }
             ]
@@ -468,12 +468,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "That sounds awful. I’m here if you need company or distraction.",
-                "careLoopExplanation": "Provides comfort and solidarity.",
+                "sankalpExplanation": "Provides comfort and solidarity.",
                 "score": 10
               },
               {
                 "dialogueOption": "Just take a pill and sleep.",
-                "careLoopExplanation": "Over-simplifies a complex condition.",
+                "sankalpExplanation": "Over-simplifies a complex condition.",
                 "score": 5
               }
             ]
@@ -483,12 +483,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "Take your time. I won’t rush or pressure you.",
-                "careLoopExplanation": "Patience shows deep emotional support.",
+                "sankalpExplanation": "Patience shows deep emotional support.",
                 "score": 10
               },
               {
                 "dialogueOption": "Why are you so sensitive?",
-                "careLoopExplanation": "Criticizes behavior caused by PTSD.",
+                "sankalpExplanation": "Criticizes behavior caused by PTSD.",
                 "score": 5
               }
             ]
@@ -498,12 +498,12 @@
             "dialogueOptions": [
               {
                 "dialogueOption": "I care about you and I’m not going anywhere.",
-                "careLoopExplanation": "Reinforces trust and safety in the relationship.",
+                "sankalpExplanation": "Reinforces trust and safety in the relationship.",
                 "score": 10
               },
               {
                 "dialogueOption": "Well, it's kind of heavy stuff to deal with.",
-                "careLoopExplanation": "Expresses discomfort and could push them away.",
+                "sankalpExplanation": "Expresses discomfort and could push them away.",
                 "score": 5
               }
             ]
