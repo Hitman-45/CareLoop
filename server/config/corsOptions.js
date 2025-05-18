@@ -4,8 +4,10 @@ const allowedOrigins = [
     'http://127.0.0.1:5500',
     'http://localhost:3500',
     'http://localhost:3000',
-    'https://sankalp-one.vercel.app',
-]
+    'http://localhost:3000',
+    'https://care-loop-clc2wjh5r-shankheshs-projects.vercel.app'
+];
+
 const corsOptions = {
     origin: (origin, callback) => {
         if (allowedOrigins.indexOf(origin) !== -1) {
