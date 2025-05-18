@@ -1,22 +1,19 @@
-// Only allow requests from certain origins
-
 const allowedOrigins = [
     'http://127.0.0.1:5500',
     'http://localhost:3500',
-    'http://localhost:3000',
     'http://localhost:3000',
     'https://care-loop-clc2wjh5r-shankheshs-projects.vercel.app'
 ];
 
 const corsOptions = {
     origin: (origin, callback) => {
-        if (allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true)
+        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
         } else {
-            callback(new Error('Not allowed by CORS'))
+            callback(new Error('Not allowed by CORS'));
         }
     },
-    optionSuccessStatus: 200
-}
+    optionsSuccessStatus: 200
+};
 
-module.exports = { allowedOrigins, corsOptions }
+module.exports = { allowedOrigins, corsOptions };
