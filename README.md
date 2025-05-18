@@ -1,12 +1,12 @@
-# Sankalp
+# CareLoop
 
-Use the app [here](https://sankalp-one.vercel.app)!
+Use the app [here](https://care-loop-mu.vercel.app/)!
 
 
 Check out demo [here](https://youtu.be/ZZddluzInkI?si=R0ijkjIWCf1E_gb_)!
 
 
-This GitHub repository is available [here](https://github.com/ChandradithyaJ/Sankalp)!
+This GitHub repository is available [here](https://github.com/Hitman-45/CareLoop)!
 
 
 ![CareLoop](./readme_pics/CareLoop_logo.png)
@@ -168,4 +168,4 @@ If you have questions, feedback, or need assistance, please contact us either on
 
 ---
 
-**Sankalp** - Together, we can create understanding and support for mental health issues and disabilities. Thank you for your interest and contributions!
+**CareLoop** - Together, we can create understanding and support for mental health issues and disabilities. Thank you for your interest and contributions!

@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2023 Chandradithya Arpit Manurbhav Karthikeya Nandhavardhan
+Copyright (c) 2025
+CareLoop Team
+Contributors: Shankesh , Sidhant , Harshit
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
