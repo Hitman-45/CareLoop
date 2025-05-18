@@ -12,6 +12,17 @@ const connectDB = require("./config/dbConn");
 connectDB(); // connect to MongoDB
 
 const app = express(); // main server component
+const serverless = require('serverless-http');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from Express on Vercel!" });
+});
+
+module.exports = app;
+module.exports.handler = serverless(app); 
 
 const PORT = process.env.PORT || 3500; // running on PORT
 
