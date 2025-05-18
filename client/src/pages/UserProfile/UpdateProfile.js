@@ -214,7 +214,7 @@ const UpdateProfile = ({ mode, user, setUser, lang, setLang }) => {
                   />
                 </label>
 
-                <div className={`select-lang-${mode}`}>
+                {/* <div className={`select-lang-${mode}`}>
                   <select
                     defaultValue={userLang}
                     onChange={(e) => setUserLang(e.target.value)}
@@ -223,7 +223,7 @@ const UpdateProfile = ({ mode, user, setUser, lang, setLang }) => {
                       <option value={code}>{languages[code]}</option>
                     ))}
                   </select>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className={'update-profile-allbuttons'}>

@@ -30,23 +30,24 @@ const getSinglePic = async (req, res) => {
 }
 
 const updateProfilePic = async (req, res) => {
-    const profilePic = req?.body?.data
-    if(!profilePic) return res.status(400).json('No profile pic to upload')
+    const profilePic = req?.body?.data;
+    const publicID = req?.body?.publicID;
 
-    const publicID = req?.body?.publicID
-    if(!publicID) return res.status(400).json('Public ID not provided')
+    if (!profilePic) return res.status(400).json('No profile pic to upload');
+    if (!publicID) return res.status(400).json('Public ID not provided');
 
-    try{
-        cloudinary.uploader.upload(profilePic, {
+    try {
+        const uploadedResponse = await cloudinary.uploader.upload(profilePic, {
             folder: 'ProfilePics',
             public_id: publicID
-        })        
-        res.status(200).json(uploadedResponse.url)
+        });
+
+        res.status(200).json(uploadedResponse.url);  // ✅ Use the result properly
     } catch (err) {
-        console.log(err)
-        return res.status(500).json('Could not upload profile picture. Please try again later.')
+        console.log(err);
+        return res.status(500).json('Could not upload profile picture. Please try again later.');
     }
-} 
+}
 
 module.exports = {
     getAllPics,

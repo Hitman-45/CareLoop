@@ -2,8 +2,10 @@ import React, { useState, useRef } from "react";
 import { GoogleGenAI } from "@google/genai";
 import "./menstrual.css";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // Replace with your actual API key
-const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+// const GEMINI_API_KEY =process.env.REACT_APP_GEMINI_API_KEY; // Replace with your actual API key
+const ai = new GoogleGenAI({
+  apiKey: process.env.REACT_APP_GEMINI_API_KEY
+});
 
 function Menstrual() {
   const [lastPeriodDate, setLastPeriodDate] = useState("");
