@@ -2,7 +2,7 @@ const allowedOrigins = [
     'http://127.0.0.1:5500',
     'http://localhost:3500',
     'http://localhost:3000',
-    'https://care-loop-clc2wjh5r-shankheshs-projects.vercel.app'
+    'https://care-loop-mu.vercel.app/login'
 ];
 
 const corsOptions = {
