@@ -3,7 +3,7 @@
 Use the app [here](https://care-loop-mu.vercel.app/)!
 
 
-Check out demo [here](https://youtu.be/ZZddluzInkI?si=R0ijkjIWCf1E_gb_)!
+Check out demo [here](https://youtu.be/_ldY9lV_Cf0)!
 
 
 This GitHub repository is available [here](https://github.com/Hitman-45/CareLoop)!
